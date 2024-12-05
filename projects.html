@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            overflow-y: auto;
+            scroll-behavior: smooth;
+            font-family: 'Poppins', sans-serif;
+            background-color: #000000;
+            color: #ffffff;
+        }
+        .background {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            background: #000000;
+            overflow: hidden;
+            z-index: -1;
+        }
+        .bubble {
+            position: absolute;
+            bottom: -100px;
+            width: 40px;
+            height: 40px;
+            background: rgba(0, 123, 255, 0.5);
+            border-radius: 50%;
+            animation: rise 8s infinite;
+        }
+        @keyframes rise {
+            0% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-1000px);
+                opacity: 0;
+            }
+        }
+        .bubble:nth-child(2) {
+            left: 20%;
+            animation-duration: 10s;
+            animation-delay: 2s;
+        }
+        .bubble:nth-child(3) {
+            left: 40%;
+            animation-duration: 12s;
+            animation-delay: 4s;
+        }
+        .bubble:nth-child(4) {
+            left: 60%;
+            animation-duration: 14s;
+            animation-delay: 6s;
+        }
+        .bubble:nth-child(5) {
+            left: 80%;
+            animation-duration: 16s;
+            animation-delay: 8s;
+        }
+        .content {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            padding-top: 50px;
+        }
+        .content h1 {
+            margin-bottom: 50px;
+            font-size: 3.5em;
+            font-weight: 600;
+            font-family: 'Arial Narrow Bold', sans-serif;
+            color: #ffbd39;
+            position: relative;
+            display: inline-block;
+            text-decoration: underline;
+        }
+        .card {
+            margin-bottom: 30px;
+            border: none;
+            background: rgba(255, 255, 255, 0.2);
+            color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .card-title {
+            color: #ffffff;
+            font-weight: 600;
+            font-size: 1.8rem
+        }
+        .card-text {
+            color: #ffffff;
+        }
+        .btn-primary {
+            background-color: #ffbd39;
+            border-color: #ffbd39;
+            color: #000000;
+        }
+        .btn-primary:hover {
+            background-color: #e6a832;
+            border-color: #e6a832;
+        }
+    </style>
+</head>
+<body>
+    <div class="background">
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+    </div>
+    <div class="content container">
+        <h1>Projects</h1>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card">
+                    <img src="Minimal Modern Elegant Background Technology Youtube Thumbnail_20241205_090146_0000.png" class="card-img-top" alt="Project 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Complete Data Science Tutorial</h5>
+                        <p class="card-text">This consists of an entire playlist to teach you the core fundamental topics to the advanced topics of Data Science. It will help you build a strong foundation and get you into it.</p>
+                        <a href="https://www.youtube.com/playlist?list=PLtWrS733H74e76xZNBUNQSrGk6eHYWQJM" class="btn btn-primary" target="_blank">View Project</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="card">
+                    <img src="Minimal Modern Elegant Background Technology Youtube Thumbnail_20241205_090146_0000.png" class="card-img-top" alt="Project 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Internal I Ques</h5>
+                        <p class="card-text">This consists of an entire playlist to teach you the core fundamental topics to the advanced topics of & It will help you build a strong foundation and get you into it. #Internal I Ques...</p>
+                        <a href="https://youtu.be/IkGYVmjxF0s" target="_blank" class="btn btn-primary">View Project</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="card">
+                    <img src="Minimal Modern Elegant Background Technology Youtube Thumbnail_20241205_090146_0000.png" class="card-img-top" alt="Project 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Internal II Ques</h5>
+                        <p class="card-text">This consists of an entire playlist to teach you the core fundamental topics to the advanced topics of & It will help you build a strong foundation and get you into it. #Internal II Ques...</p>
+                        <a href="https://youtu.be/WXd9KKHa5wk" target="_blank" class="btn btn-primary">View Project</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="card">
+                    <img src="Minimal Modern Elegant Background Technology Youtube Thumbnail_20241205_090146_0000.png" class="card-img-top" alt="Project 3">
+                    <div class="card-body">
+                        <h5 class="card-title">End Semester Ques</h5>
+                        <p class="card-text">This consists of an entire playlist to teach you the End semester questions in the best and understanding way. It will help you build a strong foundation and get you into it. #End Semester Ques...</p>
+                        <a href="https://youtu.be/CBiMCHmKpLw" target="_blank" class="btn btn-primary">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
